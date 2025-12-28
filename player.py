@@ -18,7 +18,7 @@ class Player(CircleShape):
         return [a, b, c]
 
     def draw(self, screen):
-        pygame.draw.polygon(screen, (255,255,255), self.triangle(), 2)
+        pygame.draw.polygon(screen, (0,255,255), self.triangle(), 2)
 
     def moveVertical(self, dt):
         forward = pygame.Vector2(0, 1)

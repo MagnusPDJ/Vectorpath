@@ -22,7 +22,7 @@ class Airplane(CircleShape):
         return [a, b, c]
     
     def draw(self, screen):
-        pygame.draw.polygon(screen, (255,255,255), self.triangle(), 2)
+        pygame.draw.polygon(screen, (255,0,0), self.triangle(), 2)
     
     def update(self, dt):
         if self.timer > 0:
